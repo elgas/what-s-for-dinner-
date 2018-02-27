@@ -1,0 +1,66 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 55px;
+  font-weight: lighter;
+  font-style: oblique;
+  margin-top: 20px;
+  margin-bottom:10px;
+  background-color: pink;
+}
+
+h2{
+  font-style: oblique;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.inputSection{
+  margin: 10px 20px 10px 20px;
+  width: 400px;
+}
+
+.inputProtein{
+  margin: inherit;
+}
+
+.inputCarbs{
+  margin: inherit;
+}
+
+.inputFiber{
+  margin: inherit;
+}
+.inputIngredient{
+  margin: inherit;
+}
+
+input{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.ingredientknapp{
+  width: 180px;
+  margin: inherit;
+  font-size: 16.2px;
+  background-color: lightgrey;
+}
+
+.knappRecipe{
+  margin: 20px 0px 20px 100px;
+  width: 400px;
+  font-size: 40px;
+  color: green;
+  }
+
+  html{
+    background-color: grey;
+  }
