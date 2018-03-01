@@ -2,25 +2,33 @@
 <htlm lang=en>
   <head>
     <meta charset=utf-8>
-  <title>what's for dinner?</title>
     <link href="./main.css" rel="stylesheet" type="text/css">
     <title>what's for dinner?</title>
   </head>
   <body>
     <h1>What's for dinner?</h1>
-    <h2>Pick the main ingredients!</h2>
+    <h2>List your options!</h2>
     <img src="C:\Users\elga\Documents\highproteindiets_1280px_97576cceb35a44cd86625a4d974aa827.jpeg" height="250" width="350">
-    <div class="inputSection">
-       <div class="inputProtein">
-        <input placeholder="Protein"></input></div>
-       <div class="inputCarbs">
-        <input placeholder="Carbs"></input></div>
-      <div class="inputFiber">
-        <input placeholder="Fiber"></input></div>
-    <button class="ingredientknapp">Must have ingredient...</button>
-    <div class="inputIngredient"> <input placeholder="Ingridient..."></input>
-    </div>
+<div class="inputSection">
+
+    <div class="inputOption">
+      <input placeholder="..."></input></div>
+    <button class="optionknapp">Add option...</button>
   </div>
-  <button class="knappRecipe">Dinner recipe!</button>
+  <div class="resultSection"></div>
+    <button class="knappRecipe">Dinner!</button>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+  $(function(){
+    $('.resultSection').hide()
+
+    var add_option = function(){
+      $('.inputOption').append('<input></input>')
+    }
+
+$('.optionknapp').click(add_option)
+      })
+  </script>
   </body>
 </html>

@@ -11,7 +11,7 @@ h1{
   font-style: oblique;
   margin-top: 20px;
   margin-bottom:10px;
-  background-color: pink;
+  background-color: lightyellow;
 }
 
 h2{
@@ -23,22 +23,12 @@ h2{
 }
 
 .inputSection{
-  margin: 10px 20px 10px 20px;
-  width: 400px;
+  margin: 10px 0px 10px 0px;
+  width: 500px;
+  height: 40px;
 }
 
-.inputProtein{
-  margin: inherit;
-}
-
-.inputCarbs{
-  margin: inherit;
-}
-
-.inputFiber{
-  margin: inherit;
-}
-.inputIngredient{
+.inputOption{
   margin: inherit;
 }
 
@@ -47,20 +37,20 @@ input{
   font-size: 15px;
 }
 
-.ingredientknapp{
-  width: 180px;
-  margin: inherit;
-  font-size: 16.2px;
+.optionknapp{
+  width: 200px;
+  margin-top: 10px;
+  font-size: 20px;
   background-color: lightgrey;
 }
 
 .knappRecipe{
-  margin: 20px 0px 20px 100px;
+  margin: 100px 0px 20px 100px;
   width: 400px;
   font-size: 40px;
   color: green;
   }
 
   html{
-    background-color: grey;
+    background-color: beige;
   }
