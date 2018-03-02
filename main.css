@@ -26,6 +26,8 @@ h2{
   margin: 10px 0px 10px 0px;
   width: 500px;
   height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputOption{
@@ -49,8 +51,17 @@ input{
   width: 400px;
   font-size: 40px;
   color: green;
+  display: flex;
   }
 
   html{
     background-color: beige;
+  }
+
+  .resultSection{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
   }

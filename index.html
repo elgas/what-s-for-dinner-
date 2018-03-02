@@ -11,9 +11,10 @@
     <img src="C:\Users\elga\Documents\highproteindiets_1280px_97576cceb35a44cd86625a4d974aa827.jpeg" height="250" width="350">
 <div class="inputSection">
 
-    <div class="inputOption">
-      <input placeholder="..."></input></div>
-    <button class="optionknapp">Add option...</button>
+    <div class="inputs">
+      <input placeholder="..."></input>
+    </div>
+    <button class="addoption">Add option...</button>
   </div>
   <div class="resultSection"></div>
     <button class="knappRecipe">Dinner!</button>
@@ -24,10 +25,22 @@
     $('.resultSection').hide()
 
     var add_option = function(){
-      $('.inputOption').append('<input></input>')
+      $('.inputs').append('<input></input>')
     }
+      $('.addoption').click(add_option)
 
-$('.optionknapp').click(add_option)
+      var options = []
+      var knappRecipe = function() {
+        $('.inputSection').hide()
+        $('.resultSection').css('display', 'flex')
+        $('input').each(function() {
+          options.push($(this).val())
+
+        } )
+      var winner = options [Math.floor(Math.random() * options.length)]
+$('.resultSection').text(winner)
+              }
+              $('.knappRecipe').click(knappRecipe)
       })
   </script>
   </body>
